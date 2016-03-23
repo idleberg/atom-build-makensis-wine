@@ -2,7 +2,7 @@
 [![apm](https://img.shields.io/apm/v/build-wine-makensis.svg?style=flat-square)](https://atom.io/packages/build-wine-makensis)
 [![apm](https://img.shields.io/apm/dm/build-wine-makensis.svg?style=flat-square)](https://atom.io/packages/build-wine-makensis)
 [![Travis](https://img.shields.io/travis/idleberg/atom-build-wine-makensis.svg?style=flat-square)](https://travis-ci.org/idleberg/atom-build-wine-makensis)
-[![David](https://img.shields.io/david/dev/idleberg/atom-build-wine-makensis.svg?style=flat-square)](https://david-dm.org/idleberg/atom-build-wine-makensis#info=devDependencies)
+[![David](https://img.shields.io/david/dev/idleberg/atom-build-wine-makensis.svg?style=flat-square)](https://david-dm.org/idleberg/atom-build-wine-makensis#info=dependencies)
 [![Gitter](https://img.shields.io/badge/chat-Gitter-ff69b4.svg?style=flat-square)](https://gitter.im/NSIS-Dev/Atom)
 
 # build-wine-makensis
