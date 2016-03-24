@@ -30,6 +30,10 @@ Available targets:
 
 `makensis (Wine)` — compile *as-is* using Win32 makensis (<kbd>Cmd</kbd>+<kbd>Alt</kbd>+<kbd>B</kbd>)
 
+Should you get a *Permission denied* error, you need to adjust the permissions of  the build script: 
+
+    chmod +x ~/.atom/packages/build-makensis-wine/lib/makensis-wine.sh
+
 ### Shortcuts
 
 Here's a reminder of the default shortcuts you can use with this package:
