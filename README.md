@@ -30,11 +30,15 @@ Available targets:
 
 `makensis (Wine)` — compile *as-is* using Win32 makensis (<kbd>Cmd</kbd>+<kbd>Alt</kbd>+<kbd>B</kbd>)
 
+#### Permission denied
+
 Should you get a *Permission denied* error, you need to adjust the permissions of  the build script: 
 
     chmod +x ~/.atom/packages/build-makensis-wine/lib/makensis-wine.sh
 
- Alternatively, you can specify a path for `makensis-wine.sh` outside the package directory in your `config.cson`:
+#### Path to script
+
+ Alternatively, you can specify a custom path for `makensis-wine.sh` outside the package directory in your `config.cson`:
 
  ```cson
  "build-makensis-wine":
