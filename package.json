@@ -10,7 +10,6 @@
     "nsis",
     "wine",
     "makensis",
-    "windows",
     "installer"
   ],
   "main": "lib/provider.js",
@@ -24,9 +23,6 @@
         "2.0.0": "provideBuilder"
       }
     }
-  },
-  "dependencies": {
-    "glob": "^7.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^5.0.0",
