@@ -18,7 +18,7 @@
   },
   "providedServices": {
     "builder": {
-      "description": "Compiles NSIS scripts",
+      "description": "Compiles NSIS scripts on Wine",
       "versions": {
         "2.0.0": "provideBuilder"
       }
