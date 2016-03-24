@@ -34,6 +34,13 @@ Should you get a *Permission denied* error, you need to adjust the permissions o
 
     chmod +x ~/.atom/packages/build-makensis-wine/lib/makensis-wine.sh
 
+ Alternatively, you can specify a path for `makensis-wine.sh` outside the package directory in your `config.cson`:
+
+ ```cson
+ "build-makensis-wine":
+    pathToScript: "path/to/makensis-wine.sh"
+ ```
+
 ### Shortcuts
 
 Here's a reminder of the default shortcuts you can use with this package:
