@@ -7,7 +7,9 @@
 
 # build-makensis-wine
 
-[Atom Build](https://atombuild.github.io/) provider for makensis on Wine, compiles NSIS
+[Atom Build](https://atombuild.github.io/) provider for makensis on Wine, compiles [NSIS](https://nsis.sourceforge.net).
+
+If you prefer working with the native compiler, have a look at the [build-makensis](https://atom.io/packages/build-makensis) package.
 
 ## Installation
 
