@@ -30,7 +30,8 @@ Before you can build, select an active target with your preferred build option.
 
 Available targets:
 
-`makensis (Wine)` — compile *as-is* using Win32 makensis (<kbd>Cmd</kbd>+<kbd>Alt</kbd>+<kbd>B</kbd>)
+* `makensis (Wine)` — compile *as-is* (<kbd>Cmd</kbd>+<kbd>Alt</kbd>+<kbd>B</kbd>)
+* `makensis -WX (Wine)` – compile and stop at warnings (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Super</kbd>+<kbd>B</kbd>)
 
 #### Permission denied
 
