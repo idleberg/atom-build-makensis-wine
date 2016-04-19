@@ -21,7 +21,7 @@ PATH=/usr/bin:/usr/local/bin:/opt/local/bin:/bin:$PATH
 # Check for arguments
 if [[ $@ == '' ]] || [[ $1 == '-WX' && $2 == '' ]]
 then
-    echo "Error: insufficient arguments passed"
+    echo "Error: insufficient number of arguments passed"
     exit 1
 fi
 
