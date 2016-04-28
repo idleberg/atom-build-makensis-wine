@@ -31,7 +31,7 @@ Before you can build, select an active target with your preferred build option.
 Available targets:
 
 * `makensis (Wine)` — compile *as-is* (<kbd>Cmd</kbd>+<kbd>Alt</kbd>+<kbd>B</kbd>)
-* `makensis -WX (Wine)` – compile and stop at warnings (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Super</kbd>+<kbd>B</kbd>)
+* `makensis -WX (Wine)` – compile and stop at warnings, requires NSIS 3 (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Super</kbd>+<kbd>B</kbd>)
 
 #### Permission denied
 
