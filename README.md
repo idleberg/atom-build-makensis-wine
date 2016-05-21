@@ -15,12 +15,25 @@ If you prefer working with the native compiler, have a look at the [build-makens
 
 ### apm
 
-* Install package `apm install build-makensis-wine` (or use the GUI)
+Install `build-makensis-wine` from Atom's [Package Manager](http://flight-manual.atom.io/using-atom/sections/atom-packages/) or the command-line equivalent:
+
+`$ apm install build-makensis-wine`
 
 ### GitHub
 
-1. Change directory `cd ~/.atom/packages/`
-2. Clone repository `git clone https://github.com/idleberg/atom-build-makensis-wine build-makensis-wine`
+Change to your Atom packages directory:
+
+```bash
+# Windows
+$ cd %USERPROFILE%\.atom\packages
+
+# Mac OS X & Linux
+$ cd ~/.atom/packages/
+```
+
+Clone repository as `build-makensis-wine`:
+
+`$ git clone https://github.com/idleberg/atom-build-makensis-wine build-makensis-wine`
 
 ## Usage
 
