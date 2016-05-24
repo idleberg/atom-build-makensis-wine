@@ -54,7 +54,7 @@ Should you get a *Permission denied* error, you need to adjust the permissions o
 
 #### Path to script
 
- Alternatively, you can specify a custom path for `makensis-wine.sh` outside the package directory in your `config.cson`:
+ Alternatively, you can specify a custom path for `makensis-wine.sh` outside the package directory in your Atom [configuration](http://flight-manual.atom.io/using-atom/sections/basic-customization/#_global_configuration_settings):
 
  ```cson
  "build-makensis-wine":
