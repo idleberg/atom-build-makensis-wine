@@ -3,7 +3,7 @@
     prefix: 'NSIS: Create .atom-build.cson (Wine)'
     body: """
       name: "${1:${2:file_name}.nsi}"
-      cmd: "~/.atom/packages/build-makensis-wine/makensis-wine.sh"
+      cmd: "~/.atom/packages/build-makensis-wine/lib/makensis-wine.sh"
       args: [
           $3"{FILE_ACTIVE}"$4
       ],
@@ -19,7 +19,7 @@
     body: """
       {
         "name": "${1:${2:file_name}.nsi}",
-        "cmd": "~/.atom/packages/build-makensis-wine/makensis-wine.sh",
+        "cmd": "~/.atom/packages/build-makensis-wine/lib/makensis-wine.sh",
         "args": [
             $3"{FILE_ACTIVE}"$4
         ],
@@ -35,7 +35,7 @@
     prefix: 'NSIS: Create .atom-build.yml (Wine)'
     body: """
       name: "${1:${2:file_name}.nsi}",
-      cmd: "~/.atom/packages/build-makensis-wine/makensis-wine.sh",
+      cmd: "~/.atom/packages/build-makensis-wine/lib/makensis-wine.sh",
       args:
         - $3"{FILE_ACTIVE}"$4
       sh: ${5:true},
