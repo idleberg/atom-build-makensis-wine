@@ -7,9 +7,13 @@
 [![David](https://img.shields.io/david/dev/idleberg/atom-build-makensis-wine.svg?style=flat-square)](https://david-dm.org/idleberg/atom-build-makensis-wine#info=dependencies)
 [![Gitter](https://img.shields.io/badge/chat-Gitter-ff69b4.svg?style=flat-square)](https://gitter.im/NSIS-Dev/Atom)
 
-[Atom Build](https://atombuild.github.io/) provider for makensis on Wine, compiles [NSIS](https://nsis.sourceforge.net).
+[Atom Build](https://atombuild.github.io/) provider for makensis on Wine, compiles [NSIS](https://nsis.sourceforge.net). Supports the [linter](https://atom.io/packages/linter) package with a set of error and warning patterns.
 
 If you prefer working with the native compiler, have a look at the [build-makensis](https://atom.io/packages/build-makensis) package.
+
+![Screenshot](https://raw.githubusercontent.com/idleberg/atom-build-makensis-wine/master/screenshot.png)
+
+*See the linter in action*
 
 ## Installation
 
