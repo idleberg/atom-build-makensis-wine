@@ -31,13 +31,15 @@ Change to your Atom packages directory:
 # Windows
 $ cd %USERPROFILE%\.atom\packages
 
-# Mac OS X & Linux
+# Linux & macOS
 $ cd ~/.atom/packages/
 ```
 
 Clone repository as `build-makensis-wine`:
 
-`$ git clone https://github.com/idleberg/atom-build-makensis-wine build-makensis-wine`
+```bash
+$ git clone https://github.com/idleberg/atom-build-makensis-wine build-makensis-wine
+```
 
 ## Usage
 
