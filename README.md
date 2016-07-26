@@ -4,6 +4,7 @@
 [![apm](https://img.shields.io/apm/v/build-makensis-wine.svg?style=flat-square)](https://atom.io/packages/build-makensis-wine)
 [![apm](https://img.shields.io/apm/dm/build-makensis-wine.svg?style=flat-square)](https://atom.io/packages/build-makensis-wine)
 [![Travis](https://img.shields.io/travis/idleberg/atom-build-makensis-wine.svg?style=flat-square)](https://travis-ci.org/idleberg/atom-build-makensis-wine)
+[![David](https://img.shields.io/david/idleberg/atom-build-makensis-wine.svg?style=flat-square)](https://david-dm.org/idleberg/atom-build-makensis-wine)
 [![David](https://img.shields.io/david/dev/idleberg/atom-build-makensis-wine.svg?style=flat-square)](https://david-dm.org/idleberg/atom-build-makensis-wine#info=dependencies)
 [![Gitter](https://img.shields.io/badge/chat-Gitter-ff69b4.svg?style=flat-square)](https://gitter.im/NSIS-Dev/Atom)
 
