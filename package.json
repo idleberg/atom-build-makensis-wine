@@ -10,7 +10,10 @@
     "nsis",
     "wine",
     "makensis",
+    "linux",
     "installer",
+    "build tool",
+    "compiler"
     "linter",
     "lint"
   ],
