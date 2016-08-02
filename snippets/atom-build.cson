@@ -9,7 +9,7 @@
       ],
       sh: ${5:true}
       cwd: "{FILE_ACTIVE_PATH}"
-      "errorMatch": "(\\\\\\\\((?<r?\\\\\\\\((?<n)(?<message>.+)(\\\\\\\\((?<r?\\\\\\\\((?<n)Error in script \\\\"(?<file>[^\\\\"]+)\\\\" on line (?<line>\\\\\\\\((?<d+) -- aborting creation process",
+      "errorMatch": "(\\\\\\\\((?<r?\\\\\\\\((?<n)(?<message>.+)(\\\\\\\\((?<r?\\\\\\\\((?<n)Error in script \\\\"(?<file>[^\\\\"]+)\\\\" on line (?<line>\\\\\\\\((?<d+) -- aborting creation process"
       "warningMatch": "[^!]warning: (?<message>.*) \\\\\\\\((?<file>(\\\\\\\\((?<w{1}:)?[^:]+):(?<line>\\\\\\\\((?<d+)\\\\\\\\((?<)"$6
       $7
     """
@@ -34,13 +34,13 @@
   'NSIS: Create .atom-build.yml':
     prefix: 'NSIS: Create .atom-build.yml (Wine)'
     body: """
-      name: "${1:${2:file_name}.nsi}",
-      cmd: "~/.atom/packages/build-makensis-wine/lib/makensis-wine.sh",
+      name: "${1:${2:file_name}.nsi}"
+      cmd: "~/.atom/packages/build-makensis-wine/lib/makensis-wine.sh"
       args:
         - $3"{FILE_ACTIVE}"$4
-      sh: ${5:true},
-      cwd: "{FILE_ACTIVE_PATH}",
-      errorMatch: "(\\\\\\\\((?<r?\\\\\\\\((?<n)(?<message>.+)(\\\\\\\\((?<r?\\\\\\\\((?<n)Error in script \\\\"(?<file>[^\\\\"]+)\\\\" on line (?<line>\\\\\\\\((?<d+) -- aborting creation process",
+      sh: ${5:true}
+      cwd: "{FILE_ACTIVE_PATH}"
+      errorMatch: "(\\\\\\\\((?<r?\\\\\\\\((?<n)(?<message>.+)(\\\\\\\\((?<r?\\\\\\\\((?<n)Error in script \\\\"(?<file>[^\\\\"]+)\\\\" on line (?<line>\\\\\\\\((?<d+) -- aborting creation process"
       warningMatch: "[^!]warning: (?<message>.*) \\\\\\\\((?<file>(\\\\\\\\((?<w{1}:)?[^:]+):(?<line>\\\\\\\\((?<d+)\\\\\\\\((?<)"$6
       $7
     """
