@@ -45,8 +45,8 @@ $ git clone https://github.com/idleberg/atom-build-makensis-wine build-makensis-
 Install Node dependencies:
 
 ```bash
-cd build-makensis-wine
-npm install
+$ cd build-makensis-wine
+$ npm install
 ```
 
 ## Usage
