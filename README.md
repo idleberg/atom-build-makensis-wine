@@ -42,6 +42,13 @@ Clone repository as `build-makensis-wine`:
 $ git clone https://github.com/idleberg/atom-build-makensis-wine build-makensis-wine
 ```
 
+Install Node dependencies:
+
+```bash
+cd build-makensis-wine
+npm install
+```
+
 ## Usage
 
 ### Build
