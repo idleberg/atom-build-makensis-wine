@@ -46,7 +46,7 @@ Install Node dependencies:
 
 ```bash
 $ cd build-makensis-wine
-$ npm install
+$ yarn || npm install
 ```
 
 ## Usage
