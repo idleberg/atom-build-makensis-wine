@@ -42,10 +42,9 @@ Clone repository as `build-makensis-wine`:
 $ git clone https://github.com/idleberg/atom-build-makensis-wine build-makensis-wine
 ```
 
-Install Node dependencies:
+Inside the cloned directory, install Node dependencies:
 
 ```bash
-$ cd build-makensis-wine
 $ yarn || npm install
 ```
 
