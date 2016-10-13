@@ -24,7 +24,7 @@ Install `build-makensis-wine` from Atom's [Package Manager](http://flight-manual
 
 `$ apm install build-makensis-wine`
 
-### GitHub
+### Using Git
 
 Change to your Atom packages directory:
 
