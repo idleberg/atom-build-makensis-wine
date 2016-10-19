@@ -19,7 +19,7 @@
 PATH=/usr/bin:/usr/local/bin:/opt/local/bin:/bin:$PATH
 
 # Check for arguments
-if [[ $@ == '' ]] || [[ $1 == '-WX' && $2 == '' ]]
+if [[ $@ == '' ]] || [[ ${*: -1} == '' ]]
 then
     echo "Error: insufficient number of arguments passed"
     exit 1
@@ -36,7 +36,7 @@ MAKENSIS=$(printf %q "${PROGRAMS_UNIX%?}/NSIS/makensis.exe")
 
 if [[ $1 == '-WX' ]]
 then
-	eval wine $MAKENSIS -WX -- $2
+    eval wine $MAKENSIS -WX -- $2
 else
-	eval wine $MAKENSIS -- $@
+    eval wine $MAKENSIS -- $@
 fi
