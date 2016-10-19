@@ -18,8 +18,13 @@
 # Set path
 PATH=/usr/bin:/usr/local/bin:/opt/local/bin:/bin:$PATH
 
+# Separate flags from file
+LENGTH=$(($#-1))
+FLAGS=${@:1:$LENGTH}
+FILE=${*: -1}
+
 # Check for arguments
-if [[ $@ == '' ]] || [[ ${*: -1} == '' ]]
+if [[ $FILE == '' ]]
 then
     echo "Error: insufficient number of arguments passed"
     exit 1
@@ -34,9 +39,10 @@ PROGRAMS_UNIX=$(winepath -u "${PROGRAMS_WIN}" 2>/dev/null)
 # Get makensis path
 MAKENSIS=$(printf %q "${PROGRAMS_UNIX%?}/NSIS/makensis.exe")
 
-if [[ $1 == '-WX' ]]
+# Run MakeNSIS
+if [[ $LENGTH == 0 ]]
 then
-    eval wine $MAKENSIS -WX -- $2
-else
     eval wine $MAKENSIS -- $@
+else
+    eval wine $MAKENSIS $FLAGS -- $FILE
 fi
