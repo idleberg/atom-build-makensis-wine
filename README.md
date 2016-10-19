@@ -58,21 +58,13 @@ Available targets:
 
 * `makensis on Wine` — compile *as-is* (<kbd>Cmd</kbd>+<kbd>Alt</kbd>+<kbd>B</kbd>)
 * `makensis on Wine (strict)` – compile and stop at warnings, requires NSIS 3 (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Super</kbd>+<kbd>B</kbd>)
+* `makensis on Wine (user)` – compile with custom arguments specified in the package settings
 
 #### Permission denied
 
-Should you get a *Permission denied* error, you need to adjust the permissions of  the build script: 
+Should you get a *Permission denied* error, you can try and adjust the permissions of the build script: 
 
     chmod +x ~/.atom/packages/build-makensis-wine/lib/makensis-wine.sh
-
-#### Path to script
-
- Alternatively, you can specify a custom path for `makensis-wine.sh` outside the package directory in your Atom [configuration](http://flight-manual.atom.io/using-atom/sections/basic-customization/#_global_configuration_settings):
-
- ```cson
- "build-makensis-wine":
-    pathToScript: "path/to/makensis-wine.sh"
- ```
 
 ### Shortcuts
 
