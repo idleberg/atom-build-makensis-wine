@@ -14,7 +14,7 @@ If you prefer working with the native compiler, have a look at the [build-makens
 
 ![Screenshot](https://raw.githubusercontent.com/idleberg/atom-build-makensis-wine/master/screenshot.png)
 
-*See the linter in action*
+*See the linter in action (the theme is [Hopscotch](https://atom.io/packages/hopscotch))*
 
 ## Installation
 
