@@ -3,7 +3,7 @@
 # makensis-wine.sh
 #
 # The MIT License (MIT)
-# Copyright (c) 2016 Jan T. Sott, Derek Willian Stavis
+# Copyright (c) 2016, 2017 Jan T. Sott, Derek Willian Stavis
 #
 # This script builds NSIS scripts on non-Windows platforms (Mac OS X, Linux)
 # using native makensis or through Wine
