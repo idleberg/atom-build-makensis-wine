@@ -58,7 +58,7 @@ Available targets:
 
 * `makensis on Wine` — compile *as-is* (<kbd>Cmd</kbd>+<kbd>Alt</kbd>+<kbd>B</kbd>)
 * `makensis on Wine (strict)` – compile and stop at warnings, requires NSIS 3 (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Super</kbd>+<kbd>B</kbd>)
-* `makensis on Wine (user)` – compile with custom arguments specified in the package settings
+* `makensis on Wine (user)` – compile with custom arguments specified in the package settings (<kbd>Cmd</kbd>+<kbd>Alt</kbd>+<kbd>U</kbd>)
 
 #### Permission denied
 
