@@ -2,6 +2,7 @@
 
 'use strict';
 
+const CopyPlugin = require('copy-webpack-plugin');
 const path = require('path');
 
 /**@type {import('webpack').Configuration}*/
@@ -35,6 +36,17 @@ const config = {
         ]
       }
     ]
-  }
+  },
+  node: {
+    __dirname: false
+  },
+  plugins: [
+    new CopyPlugin([
+      {
+        from: './src/makensis-wine.sh',
+        to: 'makensis-wine.sh'
+      }
+    ]),
+  ],
 };
 module.exports = config;
