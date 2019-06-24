@@ -1,6 +1,6 @@
 {
   "name": "build-makensis-wine",
-  "version": "0.18.0",
+  "version": "0.18.1",
   "description": "Atom Build provider for makensis on Wine, compiles NSIS",
   "repository": "https://github.com/idleberg/atom-build-makensis-wine",
   "license": "MIT OR GPL-2.0",
