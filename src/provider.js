@@ -8,7 +8,7 @@ import { spawn } from 'child_process';
 
 import meta from '../package.json';
 const pathToScript = join(__dirname, 'makensis-wine.sh');
-console.log(pathToScript);
+
 // Package settings
 export const config = {
   customArguments: {
