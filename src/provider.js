@@ -5,7 +5,7 @@ import { configSchema, getConfig } from './config';
 import { EventEmitter } from 'events';
 import { join } from 'path';
 import { platform } from 'os';
-import { satisfyDependencies } from './util';
+import { satisfyDependencies } from 'atom-satisfy-dependencies';
 import { spawnSync } from 'child_process';
 
 const pathToScript = join(__dirname, 'makensis-wine.sh');
@@ -94,6 +94,6 @@ export function provideBuilder() {
 
 export async function activate() {
   if (getConfig('manageDependencies') === true) {
-    satisfyDependencies();
+    satisfyDependencies('build-makensis-wine');
   }
 }
