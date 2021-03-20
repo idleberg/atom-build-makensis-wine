@@ -92,6 +92,6 @@ export function provideBuilder() {
 
 export async function activate() {
   if (getConfig('manageDependencies') === true) {
-    satisfyDependencies('build-makensis-wine');
+    satisfyDependencies(meta.name);
   }
 }
