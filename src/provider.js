@@ -1,10 +1,11 @@
-import meta from '../package.json';
 import { configSchema, getConfig } from './config';
 import { EventEmitter } from 'events';
 import { join } from 'path';
 import { platform } from 'os';
 import { satisfyDependencies } from 'atom-satisfy-dependencies';
-import { spawnSync } from 'child_process';
+import Logger from './log';
+import meta from '../package.json';
+import which from 'which';
 
 const pathToScript = join(__dirname, 'makensis-wine.sh');
 
@@ -24,6 +25,7 @@ export function provideBuilder() {
 
     isEligible() {
       if (getConfig('alwaysEligible') === true) {
+        Logger.log('Always eligible');
         return true;
       }
 
@@ -31,9 +33,13 @@ export function provideBuilder() {
         return false;
       }
 
-      const whichCmd = spawnSync('which', ['wine']);
+      if (which.sync('wine', { nothrow: true })) {
+        Logger.log('Build provider is eligible');
+        return true;
+      }
 
-      return (whichCmd.stdout && whichCmd.stdout.toString().length) ? true : false;
+      Logger.error('Build provider isn\'t eligible');
+      return false;
     }
 
     settings() {
@@ -90,8 +96,15 @@ export function provideBuilder() {
   };
 }
 
-export async function activate() {
+export function activate() {
+  Logger.log('Activating package');
+
+  // This package depends on build, make sure it's installed
   if (getConfig('manageDependencies') === true) {
     satisfyDependencies(meta.name);
   }
+}
+
+export function deactivate() {
+  Logger.log('Deactivating package');
 }
