@@ -2,7 +2,6 @@
 .eslintcache
 *.map
 *.map
-lib/
 tsconfig.tsbuildinfo
 
 # Package managers
