@@ -4,8 +4,7 @@
 [![apm](https://flat.badgen.net/apm/v/build-makensis-wine)](https://atom.io/packages/build-makensis-wine)
 [![apm](https://flat.badgen.net/apm/dl/build-makensis-wine)](https://atom.io/packages/build-makensis-wine)
 [![CircleCI](https://flat.badgen.net/circleci/github/idleberg/atom-build-makensis-wine)](https://circleci.com/gh/idleberg/atom-build-makensis-wine)
-[![David](https://flat.badgen.net/david/dep/idleberg/atom-build-makensis-wine)](https://david-dm.org/idleberg/atom-build-makensis-wine)
-[![Gitter](https://img.shields.io/badge/chat-Gitter-ed1965.svg?style=flat-square)](https://gitter.im/NSIS-Dev/Atom)
+[![David](https://flat.badgen.net/david/dev/idleberg/atom-build-makensis-wine)](https://david-dm.org/idleberg/atom-build-makensis-wine?type=dev)
 
 [Atom Build](https://atombuild.github.io/) provider for makensis on Wine, compiles [NSIS](https://nsis.sourceforge.net). Supports the [linter](https://atom.io/packages/linter) package with a set of error and warning patterns.
 
