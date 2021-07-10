@@ -4,7 +4,7 @@ import { join } from 'path';
 import { platform } from 'os';
 import { satisfyDependencies } from 'atom-satisfy-dependencies';
 import Logger from './log';
-import meta from '../package.json';
+import { name } from '../package.json';
 import which from 'which';
 
 const pathToScript = join(__dirname, 'makensis-wine.sh');
@@ -16,7 +16,7 @@ export function provideBuilder() {
     constructor(cwd) {
       super();
       this.cwd = cwd;
-      atom.config.observe(`${meta.name}.customArguments`, () => this.emit('refresh'));
+      atom.config.observe(`${name}.customArguments`, () => this.emit('refresh'));
     }
 
     getNiceName() {
@@ -101,7 +101,7 @@ export function activate() {
 
   // This package depends on build, make sure it's installed
   if (getConfig('manageDependencies') === true) {
-    satisfyDependencies(meta.name);
+    satisfyDependencies(name);
   }
 }
 
